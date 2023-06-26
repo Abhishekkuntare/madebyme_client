@@ -49,6 +49,7 @@ const HomeLoader = () => {
         style={{
           display: 'flex',
           justifyContent: 'center',
+          paddingTop: '300px',
         }}
       >
         <span className="letter1" style={{ '--i': 1 }}>

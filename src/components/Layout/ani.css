@@ -42,3 +42,9 @@
     transform: translateY(-20px);
   }
 }
+
+@media  screen and (max-width:500px) {
+  .letter1,.letter2,.letter3{
+    font-size: 28px;
+  }
+}

@@ -1,11 +1,4 @@
-import {
-  Flex,
-  Container,
-  Heading,
-  Stack,
-  Text,
-  Button,
-} from '@chakra-ui/react';
+import { chakra, Container, Stack, Text, Button } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 
 export default function HomeCom1() {
@@ -17,29 +10,61 @@ export default function HomeCom1() {
         spacing={{ base: 8, md: 10 }}
         py={{ base: 20, md: 28 }}
       >
-        <Heading
-          fontWeight={600}
-          fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
-          lineHeight={'110%'}
+        <chakra.h1
+          mb={6}
+          fontSize={{
+            base: '4xl',
+            md: '6xl',
+          }}
+          fontWeight="bold"
+          letterSpacing={{
+            base: 'normal',
+            md: 'tight',
+          }}
+          color="gray.900"
+          _dark={{
+            color: 'gray.100',
+          }}
         >
-          Learning scheduling{' '}
-          <Text as={'span'} color={'yellow.400'}>
-            made easy
-          </Text>
-        </Heading>
+          Immersive Work Ex-Based
+          <Text
+            display={{
+              base: 'block',
+              lg: 'inline',
+            }}
+            w="full"
+            bgClip="text"
+            bgGradient="linear(to-l, yellow.400,red.200)"
+            fontWeight="extrabold"
+          >
+            {''} Programs To Crack Jobs At The
+          </Text>{' '}
+          Fastest-Growing Companies
+        </chakra.h1>
         <Text color={'gray.500'} maxW={'3xl'}>
           A course description is a brief summary of the significant learning
           experiences for a course. Course descriptions appear in individual
           Course Outlines and in the Program of Studies (POSs) for individual
           programs.
         </Text>
+        <video
+          className="home_video"
+          style={{ borderRadius: '4%' }}
+          width={'80%'}
+          muted={true}
+          loop={true}
+          controls={false}
+          autoPlay={true}
+          src="https://cdn.dribbble.com/userupload/3229431/file/original-8bf924c0ebbd6c3f7e9ca3d80d46beca.mp4"
+        />
         <Stack spacing={6} direction={'row'}>
           <Button
             rounded={'full'}
             px={6}
-            colorScheme={'orange'}
-            bg={'orange.400'}
-            _hover={{ bg: 'yellow.300' }}
+            bgGradient="linear(to-r, yellow.400,red.200)"
+            _hover={{
+              bgGradient: 'linear(to-r, purple.200,yellow.200)',
+            }}
           >
             <Link to={'/request'}>Get Started</Link>
           </Button>
@@ -47,17 +72,7 @@ export default function HomeCom1() {
             <Link to={'/about'}>Learn more</Link>
           </Button>
         </Stack>
-        <Flex w={'full'}>
-          <Illustration
-            height={{ sm: '24rem', lg: '28rem' }}
-            mt={{ base: 12, sm: 16 }}
-          />
-        </Flex>
       </Stack>
     </Container>
   );
 }
-
-export const Illustration = () => {
-  return <img src="" alt="" />;
-};

@@ -1,19 +1,11 @@
-import {
-  Box,
-  chakra,
-  Text,
-  Image,
-  Icon,
-  Button,
-  Stack,
-} from '@chakra-ui/react';
+import { Box, chakra, Text, Icon, Button, Stack } from '@chakra-ui/react';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 const HomeCom2 = () => {
   return (
     <div>
-      <Box px={8} py={24} mx="auto">
+      <Box px={8} py={18} mx="auto">
         <Box
           w={{
             base: 'full',
@@ -92,34 +84,10 @@ const HomeCom2 = () => {
             }}
           >
             <Button
-              as="a"
-              variant="solid"
-              colorScheme="brand"
-              display="inline-flex"
-              alignItems="center"
-              justifyContent="center"
-              w={{
-                base: 'full',
-                sm: 'auto',
+              bgGradient="linear(to-r, blue.400,green.200)"
+              _hover={{
+                bgGradient: 'linear(to-r, green.100,blue.200)',
               }}
-              mb={{
-                base: 2,
-                sm: 0,
-              }}
-              size="lg"
-              cursor="pointer"
-            >
-              Get Started
-              <Icon boxSize={4} ml={1} viewBox="0 0 20 20" fill="currentColor">
-                <path
-                  fillRule="evenodd"
-                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clipRule="evenodd"
-                />
-              </Icon>
-            </Button>
-            <Button
-              colorScheme="gray"
               display="flex"
               alignItems="center"
               justifyContent="center"
@@ -145,14 +113,19 @@ const HomeCom2 = () => {
           mx="auto"
           mt={20}
           textAlign="center"
+          display={'flex'}
+          alignItems={'center'}
+          justifyContent={'center'}
         >
-          <Image
-            m={'auto'}
-            w={['100%', '50%']}
-            rounded="lg"
-            shadow="2xl"
-            src="https://kutty.netlify.app/hero.jpg"
-            alt="Hellonext feedback boards software screenshot"
+          <video
+            className="home_video"
+            style={{ borderRadius: '4%' }}
+            width={'70%'}
+            muted={true}
+            loop={true}
+            controls={false}
+            autoPlay={true}
+            src="https://cdn.dribbble.com/userupload/6995112/file/original-f75179fb80bcc6c4963f93ce21897b5a.mp4"
           />
         </Box>
       </Box>

@@ -20,15 +20,15 @@ const Founder = () => {
     <Stack direction={['column', 'row']} spacing={['4', '16']} padding={'8'}>
       <VStack>
         <Avatar
-          src="https://update-portfolio-omega.vercel.app/images/abhi.jpg"
+          src="https://abhishekkuntare0210.vercel.app/images/abhi.jpg"
           boxSize={['40', '48']}
         />
-        <Text children="Co-Founder" opactiy={0.7} />
+        <Text children="Founder" opactiy={0.7} />
       </VStack>
       <VStack justifyContent={'center'} alignItems={['center', 'flex-start']}>
         <Heading children="Abhishek Kuntare" size={['md', 'xl']} />
         <Text
-          children="Hi,I am a FullStack Developer "
+          children="Hello, Here is Abhishek kuntare im a Full-stack Developer. Any queries regarding to this web app please feel free to contact  me "
           textAlign={['center', 'left']}
         />
       </VStack>

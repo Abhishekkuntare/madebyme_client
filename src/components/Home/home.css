@@ -51,4 +51,7 @@
     .container2 video{        
         width: 100% ;
     }
+    .home_video{
+        width: 600px;
+    }
 }

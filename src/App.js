@@ -28,6 +28,7 @@ import toast, { Toaster } from 'react-hot-toast';
 import { loadUser } from './redux/actions/user';
 import { ProtectedRoute } from 'protected-route-react';
 import HomeLoader from './components/Layout/HomeLoader';
+import TopDown from './assets/TopDown';
 
 function App() {
   window.addEventListener('contextmenu', e => {
@@ -210,6 +211,8 @@ function App() {
           <Toaster />
         </>
       )}
+
+      <TopDown />
     </Router>
   );
 }

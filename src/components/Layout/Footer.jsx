@@ -10,9 +10,10 @@ import {
   Heading,
   HStack,
 } from '@chakra-ui/react';
-import { FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
 import { BiMailSend } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
+import { AiFillLinkedin } from 'react-icons/ai';
 
 const Logo = () => {
   return (
@@ -73,11 +74,11 @@ export default function Footer() {
                 label={'Linkdin'}
                 href="https://www.linkedin.com/in/abhishek-kuntare-65662421b/"
               >
-                <FaYoutube />
+                <AiFillLinkedin />
               </a>
               <a
                 label={'Instagram'}
-                href="https://www.instagram.com/abhishek__kuntare"
+                href="https://www.instagram.com/abhishekkuntare"
               >
                 <FaInstagram />
               </a>
